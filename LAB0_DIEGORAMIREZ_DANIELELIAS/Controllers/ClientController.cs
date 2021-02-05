@@ -53,14 +53,31 @@ namespace LAB0_DIEGORAMIREZ_DANIELELIAS.Controllers
 
         public ActionResult SortName()
         {
-            //algoritmo de dijkstra
-            return View(Singleton.Instance.ClientsList);
+            try
+            {
+                BubbleSort.Instance.BubbleSortByName(Singleton.Instance.ClientsList);
+                return View(Singleton.Instance.ClientsList); 
+            }
+            catch
+            {
+                return View(Singleton.Instance.ClientsList);
+            }
+            
         }
 
         public ActionResult SortLastName()
         {
-            //algoritmo de dijkstra
-            return View(Singleton.Instance.ClientsList);
+
+            try
+            {
+                BubbleSort.Instance.BubbleSortByLastName(Singleton.Instance.ClientsList);
+                return View(Singleton.Instance.ClientsList);
+            }
+            catch
+            {
+                return View(Singleton.Instance.ClientsList);
+            }
+            
         }
 
 

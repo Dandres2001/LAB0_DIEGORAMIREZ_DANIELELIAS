@@ -51,6 +51,19 @@ namespace LAB0_DIEGORAMIREZ_DANIELELIAS.Controllers
             }
         }
 
+        public ActionResult SortName()
+        {
+            //algoritmo de dijkstra
+            return View(Singleton.Instance.ClientsList);
+        }
+
+        public ActionResult SortLastName()
+        {
+            //algoritmo de dijkstra
+            return View(Singleton.Instance.ClientsList);
+        }
+
+
         // GET: ClientController/Edit/5
         public ActionResult Edit(int id)
         {

@@ -17,7 +17,7 @@ namespace LAB0_DIEGORAMIREZ_DANIELELIAS.Controllers
         }
 
         // GET: ClientController/Details/5
-        public ActionResult Details(int id)
+        public ActionResult Details(int id) //XD
         {
             return View();
         }
